@@ -1,0 +1,85 @@
+:root {
+  --color-primary-dark: #06283d;
+  --color-primary-light: #dff6ff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--color-primary-dark);
+}
+
+.container {
+  width: 100%;
+  background: var(--color-primary-dark);
+  text-align: center;
+  padding: 5rem 0;
+}
+
+.form-container {
+  width: 80%;
+  background: var(--color-primary-light);
+  margin: 0 auto;
+  padding: 1rem 0 2rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.input-field {
+  display: flex;
+  width: 90%;
+  margin: 1rem auto;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 1.5rem;
+  padding-right: 0.5rem;
+}
+
+.input-field input {
+  border: none;
+  border-left: 1px solid var(--color-primary-light);
+  outline: none;
+  padding-left: 1rem;
+  width: calc(100% - 1.5rem);
+}
+
+.form-footer {
+  display: flex;
+  width: 90%;
+  padding: 1rem;
+  justify-content: space-between;
+  box-sizing: border-box;
+  align-items: center;
+  margin: auto;
+}
+
+.form-footer a {
+  text-decoration: none;
+}
+
+.form-footer a:hover {
+  cursor: pointer;
+}
+
+.form-footer button {
+  padding: 0.2rem 1rem;
+  cursor: pointer;
+}
+
+.error-msg {
+  display: none;
+  color: salmon;
+}
+
+@media screen and (min-width: 500px) {
+  .form-container {
+    width: max(50%, 400px);
+  }
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signin</title>
+    <link rel="stylesheet" href="style.css" />
+    <script defer type="module" src="./index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="form-container">
+        <h2>Login</h2>
+        <form class="form">
+          <div class="input-field">
+            <img src="./images/icon-email.png" alt="email" class="image" />
+            <input id="email" type="email" placeholder="Email" />
+          </div>
+          <div class="input-field">
+            <img
+              src="./images/icon-password.png"
+              alt="password"
+              class="image"
+            />
+            <input id="password" type="password" placeholder="Password" />
+          </div>
+          <p class="error-msg">
+            Enter a valid email and a password atleast 6 characters long!
+          </p>
+          <div class="form-footer">
+            <a href="signup.html">Signup Instead</a>
+            <button type="submit" id="login-button">Login</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
